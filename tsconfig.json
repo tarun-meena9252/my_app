@@ -1,0 +1,17 @@
+{
+  "extends": "expo/tsconfig.base.json",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "nativewind-env.d.ts",
+    "Services/googlePlacesAutocomplete.js"
+, "Services/gemini.js", "Services/supabase.js", "Services/UserContext.tsx"  ]
+}
