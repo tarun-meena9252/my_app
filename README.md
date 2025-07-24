@@ -1,50 +1,72 @@
-# Welcome to your Expo app 👋
+# 🧳 Itinerary Making App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is a mobile travel planner built using [Expo](https://expo.dev) and [React Native](https://reactnative.dev), designed to generate day-by-day itineraries for users based on trip preferences.
 
-## Get started
+## 🚀 Features
 
-1. Install dependencies
+- Take user input such as:
+  - Trip location
+  - Start and end dates
+  - Type of accommodation
+  - Travel companions
+- Generate a day-wise travel itinerary automatically.
+- Suggest hotels and places to visit using **Google Places API**.
+- Store all trip data in a **Supabase PostgreSQL** database.
+- Display saved itineraries on the home screen.
 
-   ```bash
-   npm install
-   ```
+## 🛠 Tech Stack
 
-2. Start the app
+- **Frontend**: React Native, Expo, Tailwind
+- **Backend-as-a-Service**: Supabase
+- **Database**: PostgreSQL
+- **AI**: Gemini 4.0 Flash (LLM)
+- **APIs**: Google Places API
 
-   ```bash
-   npx expo start
-   ```
+## 📦 Getting Started
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+### 1. Clone the repository
 
 ```bash
-npm run reset-project
+git clone https://github.com/tarun-meena9252/my_app.git
 ```
+### 2. 🔑 API & Environment Setup
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+To run this project, create a `.env` file in the root directory with the following environment variables:
 
-## Learn more
+```env
+# Ngrok reserved domain for local backend routing
+BASE_URL=https://some-name.ngrok-free.app
 
-To learn more about developing your project with Expo, look at the following resources:
+# Gemini LLM for generating trip itineraries
+GOOGLE_GEMINI_URL=https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=
+GOOGLE_GEMINI_MODEL=gemini-2.5-flash
+GOOGLE_GEMINI_API_KEY=
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+# Google Places API for hotel/location suggestions
+GOOGLE_CLOUD_API_KEY=
 
-## Join the community
+# Supabase project credentials for storing user data
+SUPABASE_URL=
+SUPABASE_ANON_KEY=
+```
+💡 Notes
+   # BASE_URL: Used for calling backend endpoints via ngrok tunnel (e.g., itinerary generation)
 
-Join our community of developers creating universal apps.
+   # GOOGLE_GEMINI_URL, GOOGLE_GEMINI_MODEL, and GOOGLE_GEMINI_API_KEY: Used to generate itineraries using Gemini 4.0 Flash LLM
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+   # GOOGLE_CLOUD_API_KEY: Required for accessing Google Places API
+
+   # SUPABASE_URL and SUPABASE_ANON_KEY: Your Supabase project credentials
+
+   # Make sure not to commit your .env file to version control (add it to .gitignore).
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+### 4. Start the development server
+
+```bash
+npx expo start
+```
