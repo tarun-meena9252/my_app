@@ -50,15 +50,15 @@ SUPABASE_URL=
 SUPABASE_ANON_KEY=
 ```
 💡 Notes
-   # BASE_URL: Used for calling backend endpoints via ngrok tunnel (e.g., itinerary generation)
+   BASE_URL: Used for calling backend endpoints via ngrok tunnel (e.g., itinerary generation)
 
-   # GOOGLE_GEMINI_URL, GOOGLE_GEMINI_MODEL, and GOOGLE_GEMINI_API_KEY: Used to generate itineraries using Gemini 4.0 Flash LLM
+   GOOGLE_GEMINI_URL, GOOGLE_GEMINI_MODEL, and GOOGLE_GEMINI_API_KEY: Used to generate itineraries using Gemini 4.0 Flash LLM
 
-   # GOOGLE_CLOUD_API_KEY: Required for accessing Google Places API
+   GOOGLE_CLOUD_API_KEY: Required for accessing Google Places API
 
-   # SUPABASE_URL and SUPABASE_ANON_KEY: Your Supabase project credentials
+   SUPABASE_URL and SUPABASE_ANON_KEY: Your Supabase project credentials
 
-   # Make sure not to commit your .env file to version control (add it to .gitignore).
+   Make sure not to commit your .env file to version control (add it to .gitignore).
 
 ### 3. Install dependencies
 
