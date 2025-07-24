@@ -50,6 +50,7 @@ SUPABASE_URL=
 SUPABASE_ANON_KEY=
 ```
 💡 Notes
+
    BASE_URL: Used for calling backend endpoints via ngrok tunnel (e.g., itinerary generation)
 
    GOOGLE_GEMINI_URL, GOOGLE_GEMINI_MODEL, and GOOGLE_GEMINI_API_KEY: Used to generate itineraries using Gemini 4.0 Flash LLM
