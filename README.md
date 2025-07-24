@@ -7,6 +7,7 @@ This is a mobile travel planner built using [Expo](https://expo.dev) and [React 
 - Take user input such as:
   - Trip location
   - Start and end dates
+  - Budget
   - Type of accommodation
   - Travel companions
 - Generate a day-wise travel itinerary automatically.
