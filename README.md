@@ -17,7 +17,7 @@ This is a mobile travel planner built using [Expo](https://expo.dev) and [React 
 ## 🛠 Tech Stack
 
 - **Frontend**: React Native, Expo, Tailwind
-- **Backend**: FastAPI (from [autoCompleteApi repo](https://github.com/tarun-meena9252/autoCompleteApi))
+- **Backend**: FastAPI (from [autoCompleteApi repo](https://github.com/tarun-meena9252/placeName-autoComplete-api.git))
 - **Database**: Supabase (PostgreSQL)
 - **AI**: Google Gemini 4.0 Flash (LLM)
 - **APIs**: Google Places API, Gemini API
