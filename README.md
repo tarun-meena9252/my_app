@@ -63,12 +63,16 @@ SUPABASE_ANON_KEY=
 
    Make sure not to commit your .env file to version control (add it to .gitignore).
 
-### 3. Install dependencies
+### 3. DataBase Setup
+
+  See README, inside supabase folder.
+
+### 4. Install dependencies
 
 ```bash
 npm install
 ```
-### 4. Start the development server
+### 5. Start the development server
 
 ```bash
 npx expo start
